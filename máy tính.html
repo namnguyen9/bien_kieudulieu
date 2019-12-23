@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Máy tính</title>
+</head>
+<body>
+    <h1>Máy Tính</h1>
+    <input id="may1" type="number" placeholder="Nhập Số">
+    <input id="may2" type="number" placeholder="Nhập Số">
+    <br>
+    <br>
+    <button id="phepcong" type="button" onclick="phepcong()">Addition(+) </button>
+    <button id="pheptru" type="button" onclick="pheptru()">Subtraction(-)</button>
+    <button id="phepnhan" type="button" onclick="phepnhan()">Multiplication(X)</button>
+    <button id="phepchia"  type="button" onclick="phepchia()">Division(/)</button>
+ <p id="nam"></p>
+<script>
+    function phepcong() {
+        let may1 = parseInt(document.getElementById("may1").value);
+        let may2 = parseInt(document.getElementById("may2").value);
+        let ketqua = may1 + may2;
+        document.getElementById("nam").innerHTML="ket qua="+ ketqua;
+       
+
+
+    }
+    function pheptru() {
+        let may1 = parseInt(document.getElementById("may1").value);
+        let may2 = parseInt(document.getElementById("may2").value);
+        let ketqua = may1 - may2;
+        document.getElementById("nam").innerHTML="ket qua="+ ketqua;
+    }
+    function phepnhan() {
+        let may1 = parseInt(document.getElementById("may1").value);
+        let may2 = parseInt(document.getElementById("may2").value);
+        let ketqua = may1 * may2;
+        document.getElementById("nam").innerHTML="ket qua="+ ketqua;
+    }
+    function phepchia() {
+        let may1 = parseInt(document.getElementById("may1").value);
+        let may2 = parseInt(document.getElementById("may2").value);
+        let ketqua = may1 / may2;
+        document.getElementById("nam").innerHTML="ket qua="+ ketqua;
+    }
+</script>
+</body>
+</html>
